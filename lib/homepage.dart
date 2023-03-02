@@ -12,13 +12,11 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-
-
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFEEEFF5),
+      backgroundColor: const Color(0xFFEEEFF5),
       bottomNavigationBar: Container(
         color: Colors.black,
         child: Padding(
@@ -29,10 +27,10 @@ class _HomePageState extends State<HomePage> {
             activeColor: Colors.white,
             tabBackgroundColor: Colors.grey.shade800,
             gap: 5,
-            padding: EdgeInsets.all(15),
+            padding: const EdgeInsets.all(15),
 
-            tabs: const [
-              GButton(
+            tabs: [
+              const GButton(
                 icon: Icons.home,
                 text: 'Home',
               ),
@@ -45,12 +43,12 @@ class _HomePageState extends State<HomePage> {
                 },
               ),
 
-              GButton(
+              const GButton(
                 icon: Icons.note_add,
                 text: 'Notes',
               ),
 
-              GButton(
+              const GButton(
                 icon: Icons.calendar_month,
                 text: 'Schedule',
               ),
